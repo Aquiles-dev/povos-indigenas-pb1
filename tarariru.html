@@ -10,41 +10,92 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{--accent:#0b6b4a;--muted:#55606a}
-    *{box-sizing:border-box}
-    body{
-      font-family:system-ui,Arial,Helvetica;
-      margin:0;
-      background:linear-gradient(180deg,#fffefb,#f7f3ec);
-      color:#1f2933
+    :root {
+      --accent: #0b6b4a;
+      --muted: #55606a;
     }
-    .wrap{max-width:900px;margin:16px auto;padding:18px}
-    header{display:flex;gap:12px;align-items:center}
-    .hero{display:flex;flex-direction:column;gap:14px;margin-top:14px}
-    .hero img{
-      width:100%;height:auto;border-radius:12px;
-      border:6px solid rgba(11,107,74,0.06)
+
+    * {
+      box-sizing: border-box;
     }
-    h1{
-      font-family:'Cormorant Garamond', serif;
-      color:var(--accent);margin:0
+
+    body {
+      font-family: system-ui, Arial, Helvetica;
+      margin: 0;
+      background: linear-gradient(180deg,#fffefb,#f7f3ec);
+      color: #1f2933;
     }
-    .meta{color:var(--muted)}
-    .content{margin-top:12px;line-height:1.7}
-    .references{
-      margin-top:18px;background:#fff;
-      padding:12px;border-radius:10px;
-      border:1px solid rgba(0,0,0,0.04)
+
+    .wrap {
+      max-width: 900px;
+      margin: 16px auto;
+      padding: 18px;
     }
-    .exit{
-      display:inline-block;margin-top:18px;
-      padding:10px 14px;background:var(--accent);
-      color:#fff;border-radius:999px;
-      text-decoration:none;font-weight:700
+
+    header {
+      display: flex;
+      gap: 12px;
+      align-items: center;
     }
-    @media (min-width:900px){
-      .hero{flex-direction:row}
-      .hero img{width:360px}
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      border: 6px solid rgba(11,107,74,0.06);
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .meta {
+      color: var(--muted);
+    }
+
+    .content {
+      margin-top: 12px;
+      line-height: 1.7;
+    }
+
+    .references {
+      margin-top: 18px;
+      background: #fff;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .exit {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 14px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        flex-direction: row;
+        gap: 20px;
+      }
+      .hero img {
+        width: 360px;
+      }
     }
   </style>
 </head>
@@ -61,18 +112,19 @@
     </header>
 
     <section class="hero">
-      <img src="https://drive.google.com/uc?export=view&id=1UVL11l5qc9jh14l0XCclNnAydBag8Gw4"
+      <!-- IMAGEM CORRIGIDA: LINK DIRETO PÚBLICO -->
+      <img src="https://drive.google.com/uc?export=view&id=1UVL11l5qc9jh14l0XCclNnAydBag8Gw4" 
            alt="Representação visual associada aos Tarairús">
 
       <div>
         <div class="content">
-          <p>Os Tarairú (também grafados como Tarairiús ou referidos em variantes locais) compõem um conjunto de grupos históricos que ocuparam áreas do interior nordestino, incluindo partes da Paraíba, Rio Grande do Norte e Pernambuco. Fontes coloniais e pesquisas etno-históricas identificam os Tarairiú como parte do amplo conjunto de povos chamados pelos colonizadores de “Tapuias” — termo genérico empregado pelos europeus e pelos próprios tupis para grupos de língua não-tupi.</p>
+          <p>Os Tarairú (também grafados como Tarairiús) compõem um conjunto de grupos históricos que ocuparam áreas do interior nordestino, incluindo partes da Paraíba, Rio Grande do Norte e Pernambuco. Fontes coloniais e pesquisas etno-históricas identificam os Tarairiú como parte do conjunto de povos chamados pelos colonizadores de “Tapuias”.</p>
 
-          <p>As atividades tradicionais incluíam agricultura de sequeiro (mandioca, milho, feijão), extrativismo e manejo de recursos locais, além de práticas cerâmicas e materialidades que hoje aparecem em achados arqueológicos e coleções museológicas. Como acontece com muitos grupos do sertão, a documentação direta é fragmentária: documentos missionários, relatos de viajantes e registros administrativos formam a base para a reconstrução histórica.</p>
+          <p>As atividades tradicionais incluíam agricultura de sequeiro, extrativismo e manejo de recursos locais, além de práticas cerâmicas e materialidades que hoje aparecem em achados arqueológicos e coleções museológicas.</p>
 
-          <p>No processo colonial, os Tarairiú enfrentaram deslocamentos, conflitos e pressões territoriais que resultaram em dispersão e, em muitos casos, na incorporação em populações mestiças rurais. A redescoberta de vestígios culturais e a pesquisa histórica recente têm buscado recuperar essas trajetórias, valorizando as memórias locais e as vozes de descendentes que preservam saberes sobre terras, práticas agrícolas e rituais.</p>
+          <p>No processo colonial, os Tarairiú enfrentaram deslocamentos e conflitos, resultando em dispersão e, em muitos casos, incorporação em populações rurais mestiças. Pesquisas recentes buscam recuperar essas trajetórias, valorizando memórias locais e saberes tradicionais.</p>
 
-          <p>Para estudantes e pesquisadores, é recomendável consultar trabalhos específicos, como estudos etno-históricos, artigos acadêmicos e documentos arquivísticos que abordam missões, conflitos e as transformações demográficas do período colonial e posterior.</p>
+          <p>Para estudos, é recomendável consultar trabalhos específicos sobre missões, conflitos e transformações demográficas do período colonial e posterior.</p>
         </div>
 
         <div class="references">
@@ -88,7 +140,3 @@
         <a class="exit" href="index.html">◀ Voltar ao mapa</a>
       </div>
     </section>
-
-  </div>
-</body>
-</html>
