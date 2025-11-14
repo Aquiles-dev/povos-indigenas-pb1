@@ -1,116 +1,131 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mapa interativo dos povos indígenas da Paraíba: Tarairús, Tupi e Kariri. Explore sua história, cultura e território.">
   <title>Mapa dos Povos Indígenas da Paraíba</title>
+
+  <!-- Importando a fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(180deg, #f4e1c1, #c9d8b6);
       overflow-x: hidden;
-    }header {
-  text-align: center;
-  padding: 2rem;
-  color: #3e2723;
-}
+    }
 
-.mapa {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    header {
+      text-align: center;
+      padding: 2rem;
+      color: #3e2723;
+    }
 
-.linha-tracejada {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 100%;
-  border-left: 3px dashed #4e342e;
-  z-index: 0;
-}
+    .mapa {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.povo {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3rem 0;
-}
+    .linha-tracejada {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      border-left: 3px dashed #4e342e;
+      z-index: 0;
+    }
 
-.povo img {
-  width: 80%;
-  max-width: 320px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
+    .povo {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 3rem 0;
+    }
 
-.povo button {
-  margin-top: 1rem;
-  background: #4e342e;
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .povo img {
+      width: 80%;
+      max-width: 320px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border: 4px solid rgba(0,0,0,0.2);
+    }
 
-.povo button:hover {
-  background: #6d4c41;
-}
+    .povo button {
+      margin-top: 1rem;
+      background: #4e342e;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-footer {
-  text-align: center;
-  margin: 2rem;
-  color: #3e2723;
-  font-size: 0.9rem;
-}
+    .povo button:hover {
+      background: #6d4c41;
+    }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
-  .povo img {
-    width: 90%;
-  }
-}
+    footer {
+      text-align: center;
+      margin: 2rem;
+      color: #3e2723;
+      font-size: 0.9rem;
+    }
 
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      .povo img {
+        width: 90%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Mapa dos Povos Indígenas da Paraíba</h1>
-    <p>Explore a história dos povos Tarariru, Tupi e Kariri.</p>
-  </header>  <main class="mapa">
-    <div class="linha-tracejada"></div><div class="povo">
-  <img src="https://auniao.pb.gov.br/noticias/caderno_paraiba/paraiba-e-sinonimo-de-terra-indigena/indios-potiguaras-roberto-guedes-4-1.jpg" alt="Povo Tarariru">
-  <button onclick="window.location.href='tarariru.html'">Ver Povo Tarairús</button>
-</div>
+    <p>Explore a história dos povos Tarairú, Tupi e Kariri.</p>
+  </header>
 
-<div class="povo">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Homtupinamba.jpg" alt="Povo Tupi">
-  <button onclick="window.location.href='tupi.html'">Ver Povo Tupi</button>
-</div>
+  <main class="mapa">
+    <div class="linha-tracejada"></div>
 
-<div class="povo">
-  <img src="https://paraibacriativa.com.br/wp-content/uploads/2015/11/culturas_identitarias_indios_cariris1.jpg" alt="Povo Kariri">
-  <button onclick="window.location.href='kariri.html'">Ver Povo Kariri</button>
-</div>
+    <div class="povo">
+      <img src="https://auniao.pb.gov.br/noticias/caderno_paraiba/paraiba-e-sinonimo-de-terra-indigena/indios-potiguaras-roberto-guedes-4-1.jpg" alt="Povo Tarairú">
+      <button onclick="window.location.href='tarariru.html'">Ver Povo Tarairús</button>
+    </div>
 
-  </main>  <footer>
+    <div class="povo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Homtupinamba.jpg" alt="Povo Tupi">
+      <button onclick="window.location.href='tupi.html'">Ver Povo Tupi</button>
+    </div>
+
+    <div class="povo">
+      <img src="https://paraibacriativa.com.br/wp-content/uploads/2015/11/culturas_identitarias_indios_cariris1.jpg" alt="Povo Kariri">
+      <button onclick="window.location.href='kariri.html'">Ver Povo Kariri</button>
+    </div>
+  </main>
+
+  <footer>
     <p>Projeto desenvolvido para a SAU - IFPB Campus Itabaiana | 2025</p>
   </footer>
 </body>
