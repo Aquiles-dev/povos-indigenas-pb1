@@ -6,7 +6,7 @@
   <meta name="description" content="Mapa interativo dos povos indígenas da Paraíba: Tarairús, Tupi e Kariri. Explore sua história, cultura e território.">
   <title>Mapa dos Povos Indígenas da Paraíba</title>
 
-  <!-- Importando a fonte Poppins -->
+  <!-- Fonte Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -66,20 +66,41 @@
       border: 4px solid rgba(0,0,0,0.2);
     }
 
+    /* EFEITO PULSANTE + COR DISCRETA */
     .povo button {
       margin-top: 1rem;
-      background: #4e342e;
+      background: #6d4c41;
       color: #fff;
       border: none;
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      font-size: 1rem;
+      padding: 1rem 1.4rem;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
+      width: 85%;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+      border: 2px solid #ffffff33;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      /* efeito pulsante suave */
+      animation: pulse 1.9s infinite ease-in-out;
+      transition: 0.25s;
     }
 
     .povo button:hover {
-      background: #6d4c41;
+      background: #8d6e63;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+      100% { transform: scale(1); }
     }
 
     footer {
@@ -111,17 +132,17 @@
 
     <div class="povo">
       <img src="https://auniao.pb.gov.br/noticias/caderno_paraiba/paraiba-e-sinonimo-de-terra-indigena/indios-potiguaras-roberto-guedes-4-1.jpg" alt="Povo Tarairú">
-      <button onclick="window.location.href='tarariru.html'">Toque para Ver Povo Tarairús</button>
+      <button onclick="window.location.href='tarariru.html'">👉 Ver Povo Tarairús</button>
     </div>
 
     <div class="povo">
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Homtupinamba.jpg" alt="Povo Tupi">
-      <button onclick="window.location.href='tupi.html'">Toque para Ver Povo Tupi</button>
+      <button onclick="window.location.href='tupi.html'">👉 Ver Povo Tupi</button>
     </div>
 
     <div class="povo">
       <img src="https://paraibacriativa.com.br/wp-content/uploads/2015/11/culturas_identitarias_indios_cariris1.jpg" alt="Povo Kariri">
-      <button onclick="window.location.href='kariri.html'">Toque para Ver Povo Kariri</button>
+      <button onclick="window.location.href='kariri.html'">👉 Ver Povo Kariri</button>
     </div>
   </main>
 
