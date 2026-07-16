@@ -1,0 +1,376 @@
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+    min-height:75vh;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+.hero-texto{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:1.15rem;
+
+    color:var(--text-light);
+
+    margin-bottom:40px;
+
+}
+
+.hero a{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:16px 32px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero a:hover{
+
+    transform:translateY(-5px);
+
+    background:#25463c;
+
+}
+
+/* ===================================
+   INTRODUÇÃO
+=================================== */
+
+.introducao{
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    margin-top:60px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.introducao h2{
+
+    margin-bottom:25px;
+
+}
+
+.introducao p{
+
+    margin-top:18px;
+
+}
+
+/* ===================================
+   AVISO
+=================================== */
+
+.aviso{
+
+    margin-top:60px;
+
+    background:#FFF9E7;
+
+    border-left:6px solid var(--accent);
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.aviso h2{
+
+    margin-bottom:18px;
+
+}
+
+.aviso p{
+
+    margin-top:15px;
+
+}
+
+/* ===================================
+   POVOS
+=================================== */
+
+.povos{
+
+    margin-top:90px;
+
+}
+
+.povos h2{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+/* ===================================
+   CARDS
+=================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card figure{
+
+    margin:0;
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.card figcaption{
+
+    padding:12px;
+
+    font-size:.82rem;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    background:#fafafa;
+
+    font-style:italic;
+
+}
+
+.card h3{
+
+    padding:25px 25px 10px;
+
+}
+
+.card p{
+
+    padding:0 25px;
+
+}
+
+.card a{
+
+    display:inline-block;
+
+    margin:25px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.card a:hover{
+
+    background:#24473d;
+
+}
+
+/* ===================================
+   SOBRE O PROJETO
+=================================== */
+
+.sobre-projeto{
+
+    margin-top:90px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.sobre-projeto h2{
+
+    margin-bottom:25px;
+
+}
+
+.sobre-projeto p{
+
+    margin-top:18px;
+
+}
+
+/* ===================================
+   ANIMAÇÃO
+=================================== */
+
+.hero,
+.introducao,
+.aviso,
+.card,
+.sobre-projeto{
+
+    animation:fade .8s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media(max-width:900px){
+
+.hero{
+
+min-height:60vh;
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.introducao,
+.aviso,
+.sobre-projeto{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+.hero a{
+
+width:100%;
+
+}
+
+}

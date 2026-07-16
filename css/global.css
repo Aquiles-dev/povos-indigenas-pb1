@@ -1,0 +1,417 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --background:#F6F2E8;
+    --surface:#FFFFFF;
+
+    --primary:#2F5D50;
+    --secondary:#8B5E34;
+    --accent:#C89B3C;
+
+    --text:#2B2B2B;
+    --text-light:#6A6A6A;
+
+    --border:#E4DDD1;
+
+    --shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ===========================
+   TIPOGRAFIA
+=========================== */
+
+h1,
+h2,
+h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:var(--primary);
+
+}
+
+h1{
+
+    font-size:4rem;
+
+}
+
+h2{
+
+    font-size:2.5rem;
+
+}
+
+h3{
+
+    font-size:1.8rem;
+
+}
+
+p{
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:white;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+}
+
+.logo{
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    font-size:1.3rem;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    position:relative;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transition:.3s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:60px 25px;
+
+}
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 28px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#23483e;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:80px;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+h1{
+
+    font-size:3rem;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+}
+
+}
+/* ===========================
+   MENU MOBILE
+=========================== */
+
+
+.menu-mobile{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+.menu-mobile{
+
+    display:block;
+
+}
+
+
+nav{
+
+    display:none;
+
+    flex-direction:column;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+nav.ativo{
+
+    display:flex;
+
+}
+
+
+}
+
+
+
+
+/* ===========================
+   ANIMAÇÕES JS
+=========================== */
+
+
+.animar{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.7s ease;
+
+}
+
+
+
+.mostrar{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/* ===========================
+   VOLTAR AO TOPO
+=========================== */
+
+
+.topo{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.3s;
+
+}
+
+
+
+.topo.visivel{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+
+.topo:hover{
+
+    transform:translateY(-5px);
+
+}
