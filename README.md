@@ -8,7 +8,7 @@ A aplicação foi criada como parte de uma apresentação para a **Semana Acadê
 
 O projeto está disponível através do GitHub Pages:
 
-[Visitar site](https://aquiles-dev.github.io/povos-indigenas-pb1/)
+[Visitar site](https://aquiles-dev.github.io/povos-indigenas-paraiba/)
 
 ## Sobre o projeto
 
